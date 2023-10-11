@@ -1,0 +1,30 @@
+{
+  "name": "movies_app_backend",
+  "version": "1.0.0",
+  "description": "A movies website api developed by Loqman Djefafla",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Loqman Djefafla",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "canvas": "^2.11.2",
+    "cloudinary": "^1.37.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1",
+    "slugify": "^1.6.6",
+    "socket.io": "^4.7.2",
+    "streamifier": "^0.1.1",
+    "stripe": "^12.16.0"
+  }
+}
