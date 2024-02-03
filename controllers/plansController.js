@@ -33,6 +33,8 @@ export const createPlan = async (req, res) => {
       stripePlanId: stripePlan.id,
     });
 
+
+    console.log(createPlan, 'CREATED PLAN')
     res
       .status(200)
       .json({ msg: "Plan created successfully", plan: createdPlan });
