@@ -34,7 +34,7 @@ export const createPlan = async (req, res) => {
     });
 
 
-    console.log(createPlan, 'CREATED PLAN')
+    console.log(stripePlan, 'CREATED PLAN')
     res
       .status(200)
       .json({ msg: "Plan created successfully", plan: createdPlan });
