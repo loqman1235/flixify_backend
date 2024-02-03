@@ -21,12 +21,12 @@ dotenv.config();
 const app = express();
 const httpServer = http.createServer(app);
 const io = new Server(httpServer, {
-  cors: { origin: "http://localhost:5173" },
+  cors: { origin: process.env.FRONTEND_URL },
 });
 // Middlware
 app.use("/api/v1/payments/webhook", express.raw({ type: "*/*" }));
 app.use(express.json());
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(cors({ credentials: true, origin: process.env.FRONTEND_URL }));
 app.use(cookieParser());
 app.use(express.static("public"));
 
